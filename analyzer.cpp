@@ -57,7 +57,8 @@ int search(vector<string> data, string search_item) {
 
 int main() {
 
-    vector<string> data = {"aaaaa","bbbbb"};
+    vector<string> data = {"aaaa","bbbb","cccc","dddd","eeee","zzzz"};
+    // sample data, not full data
 
     search(data, "not here");
     search(data, "aaaa");
