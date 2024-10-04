@@ -43,13 +43,13 @@ int search(vector<string> data, string search_item) {
     int x = linear_search(data, search_item);
     auto end = chrono::high_resolution_clock::now();
 
-    std::cout << "[not_here] Linear Search: " << (start-end) << " at position " << x;
+    std::cout << search_item <<" Linear Search: " << (start-end) << " at position " << x;
 
     start = chrono::high_resolution_clock::now();
     int y = binary_search(data, search_item);
     end = chrono::high_resolution_clock::now();
 
-    std::cout << "[not_here] Binary Search: " << (start-end) << " at position " << x;
+    std::cout << search_item <<" Binary Search: " << (start-end) << " at position " << x;
 
     return 0;
 }
